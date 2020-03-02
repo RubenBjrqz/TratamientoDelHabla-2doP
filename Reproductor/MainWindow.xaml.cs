@@ -246,6 +246,21 @@ namespace Reproductor
         {
             lblOffsetDelay.Text = 
                 ((int)(sldOffsetDelay.Value)).ToString();
+            if(efectoDelay != null)
+            {
+                efectoDelay.OffsetMilisegundos =
+                    (int)(sldOffsetDelay.Value);
+            }
+        }
+
+        private void SldGanancia_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            //Preguntarle al profe porque son diferentes los transformadores de texto
+            if (lblGanancia != null)
+            {
+                lblGanancia.Text =
+                    sldGanancia.Value.ToString("N");
+            }
         }
     }
 }

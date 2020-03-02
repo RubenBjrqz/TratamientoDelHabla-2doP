@@ -31,12 +31,15 @@
         <TextBox x:Name="txtFadeOutInicio" HorizontalAlignment="Left" Height="23" Margin="174,113,0,0" TextWrapping="Wrap" Text="7" VerticalAlignment="Top" Width="114"/>
         <TextBlock HorizontalAlignment="Left" Margin="299,100,0,0" TextWrapping="Wrap" Text="Duración" VerticalAlignment="Top" FontSize="10" Width="68"/>
         <TextBox x:Name="txtFadeOutDuracion" HorizontalAlignment="Left" Height="23" Margin="293,113,0,0" TextWrapping="Wrap" Text="5" VerticalAlignment="Top" Width="114"/>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="82" Margin="10,176,0,0" Stroke="Black" VerticalAlignment="Top" Width="138"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="82" Margin="10,176,0,0" Stroke="Black" VerticalAlignment="Top" Width="324"/>
         <TextBlock HorizontalAlignment="Left" Margin="16,186,0,0" TextWrapping="Wrap" Text="Delay " VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5"/>
         <TextBlock x:Name="lblOffsetDelay" HorizontalAlignment="Left" Margin="117,241,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="10" Text="1.5"/>
         <Slider x:Name="sldOffsetDelay" HorizontalAlignment="Left" Margin="16,218,0,0" VerticalAlignment="Top" Width="120" ValueChanged="SldOffsetDelay_ValueChanged" Value="1500" Maximum="10000"/>
         <TextBlock HorizontalAlignment="Left" Margin="104,202,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="10" Text="Offset"/>
-        
+        <Slider x:Name="sldGanancia" HorizontalAlignment="Left" Margin="163,218,0,0" VerticalAlignment="Top" Width="120"  Value="0.5" Maximum="1" ValueChanged="SldGanancia_ValueChanged"/>
+        <TextBlock HorizontalAlignment="Left" Margin="236,200,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="10" Text="Ganancia"/>
+        <TextBlock x:Name="lblGanancia" HorizontalAlignment="Left" Margin="264,241,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="10" Text="0.5"/>
+
 
     </Grid>
 </Window>
